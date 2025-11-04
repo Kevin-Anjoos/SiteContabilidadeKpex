@@ -1,0 +1,14 @@
+.container { max-width: 1200px; margin: 0 auto; }
+.servicos { display: flex; flex-direction: column; gap: 1.25rem; padding: 1.25rem; }
+.servicos__header p { color: var(--muted); max-width: 70ch; }
+
+.servicos__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.servico { padding: 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); box-shadow: 0 8px 30px rgba(2,6,23,0.55); }
+.servico h3 { margin: 0 0 0.5rem 0; }
+.servico p { color: var(--muted); margin: 0 0 1rem 0; }
+.servico__actions { display: flex; gap: 0.5rem; align-items: center; }
+.btn-link { color: var(--accent); font-weight: 700; text-decoration: none; }
+.servico button { margin-left: auto; padding: 0.5rem 0.8rem; }
+
+@media (max-width: 980px) { .servicos__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px) { .servicos__grid { grid-template-columns: 1fr; } .servico { padding: 0.9rem; } }

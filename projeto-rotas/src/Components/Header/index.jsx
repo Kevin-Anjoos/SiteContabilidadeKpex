@@ -7,16 +7,15 @@ export function Header() {
     return (
         <header className='header'>
             <div className='header__'>
-                <Link to="/">
+                <Link to="/" className="brand">
                     <img src={logo} alt="logo Contabilidade" />
-                    <span>Contabilidade Dendezeiros</span>
+                    <span className="brand__name">Contabilidade <strong>Kpex</strong> Soluções</span>
                 </Link>
             </div>
-            <nav className='nav'>
+            <nav className='nav' aria-label="Principal">
                 <NavLink to='/servicos'>Serviços</NavLink>
-                <NavLink to='/fale-conosco'><br />Contato</NavLink>
-                <NavLink to='/sobre-nos'><br />Sobre Nós</NavLink>
-                
+                <NavLink to='/fale-conosco'>Contato</NavLink>
+                <NavLink to='/sobre-nos'>Sobre Nós</NavLink>
             </nav>
         </header>
     )

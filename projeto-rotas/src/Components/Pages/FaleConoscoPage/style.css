@@ -1,1 +1,24 @@
-/* src\Components\Pages\FaleConoscoPage\style.css */
+/* FaleConoscoPage styles */
+.fale-conosco { max-width: 72ch; margin: 0 auto; color: var(--text); }
+.fale-conosco .form { display: flex; flex-direction: column; gap: 0.6rem; }
+.fale-conosco label { display: block; margin-bottom: 0.25rem; color: var(--muted); font-weight: 600; }
+.fale-conosco input, .fale-conosco textarea {
+	width: 100%; padding: 0.65rem 0.75rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.04); background: rgba(255,255,255,0.02); color: var(--text);
+}
+.fale-conosco button { margin-top: 0.5rem; align-self: flex-start; }
+
+.contact-actions .call-btn {
+	background: linear-gradient(90deg, var(--accent-2), var(--accent));
+	color: #071022;
+	border: 0;
+	padding: 0.5rem 0.9rem;
+	border-radius: 10px;
+	font-weight: 700;
+}
+.contact-actions a { text-decoration: none; }
+
+@media (max-width: 720px) {
+	.fale-conosco { padding: 0 0.5rem; }
+	.contact-actions { flex-direction: column; align-items: stretch; }
+	.contact-actions a button { width: 100%; }
+}

@@ -5,7 +5,7 @@ import './style.css'
 export function HomePage() {
     return (
         <>
-            <h1>Home Page</h1>
+            <h1><n2>Kp<n>e</n>x</n2> Soluções</h1>
             
         </>
     )
